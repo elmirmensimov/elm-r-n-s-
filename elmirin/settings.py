@@ -55,7 +55,7 @@ ROOT_URLCONF = 'elmirin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'home', 'templates')],  # Şablon klasörünüzün yolu
+        'DIRS': [os.path.join(BASE_DIR, 'elmirin/template')],  # Şablon klasörünüzün yolu
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
