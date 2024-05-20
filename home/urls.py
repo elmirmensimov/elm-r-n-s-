@@ -1,9 +1,9 @@
 from django.urls import path
-from home import views
-from django.contrib import admin
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('', views.home_view, name='home'),
+    path('orders/', views.order_list, name='order_list'),
+    path('index/', views.index, name='index'),
 ]
-git add .
+

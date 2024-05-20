@@ -18,6 +18,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')),  # Uygulama URLsini projeye dahil ediyoruz
+    path('', include('home.urls')),  # Ana sayfa ve home uygulaması için
+    path('products/', include('products.urls')),  # Ürünler uygulaması için
+    path('orders/', include('home.urls')),  # Siparişler için (home.urls içinden yönetildiği varsayımıyla)
 ]
 
