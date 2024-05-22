@@ -8,9 +8,9 @@ def order_list(request):
 
 def home_view(request):
     products = Product.objects.all()
-    return render(request,'home/index.html', {'products': products})
+    return render(request,'home/home.html', {'products': products})
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'home.html')
 
 
